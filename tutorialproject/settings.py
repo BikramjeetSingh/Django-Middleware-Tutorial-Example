@@ -47,6 +47,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'tutorialproject.middleware.CountRequestsMiddleware',
+    'tutorialproject.middleware.SetUserAgentMiddleware',
+    'tutorialproject.middleware.BlockMobileMiddleware',
 ]
 
 ROOT_URLCONF = 'tutorialproject.urls'
